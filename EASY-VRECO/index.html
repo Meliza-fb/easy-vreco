@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GEOLOCALOZACIÓN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <header align="center">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 group">
+        <button id="encuentrame"  class="btn btn-dark" >Encuéntrame</button>
+        <input id="punto-partida" placeholder="Introduce tu Punto de Partida" type="text" name="" value="">
+        <input id="punto-destino"  placeholder="Introduce tu punto de Destino" type="text" name="" value="">
+        <button id="trazar-ruta" class="btn btn-success" type="text" name="">Trazar ruta</button>
+      </div>
+    </div>
+  </header>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12" id="map">
+      </div>
+    </div>
+  </section>
+
+  <!-- script file -->
+
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNq_UtOGDu7Veg1yGzIgG4nJJ6Umv6o8M&callback=initMap&libraries=places"></script><!--despues de key y antes de & callback va nuestra key que pedimos en google-->
+  <script src="app.js"></script>
+</body>
+</html>
